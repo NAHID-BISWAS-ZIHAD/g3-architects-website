@@ -78,36 +78,6 @@ nav h3 {
 .banner img {
     width: 100%;
 }
-
-@media screen and (max-width:576px) {
-    header{
-        padding: 20px;
-    }
-    nav{
-        flex-direction: column;
-    }
-    nav>ul{
-        margin-top: 50px;
-    }
-    .banner-content {
-        margin: 40px auto 10px auto;
-    }
-}
-
-@media screen and (min-width:576px) and (max-width:982px) {
-    header{
-        padding: 50px;
-    }
-    nav{
-        flex-direction: column;
-    }
-    nav>ul{
-        margin-top: 50px;
-    }
-    .banner-content {
-        margin: 40px auto 10px auto;
-    }
-}
 /* Main section start */
 main{
     max-width: 1440px;
@@ -144,4 +114,52 @@ main{
 }
 .team-description{
     color: #727272;
+}
+.some-fact-title{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.some-fact-description{
+    color: #727272;
+}
+
+/* Responsive design */
+@media screen and (max-width:576px) {
+    header, main{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .team-container{
+        flex-direction: column-reverse;
+    }
+    nav>ul, main{
+        margin-top: 50px;
+    }
+    .banner-content {
+        margin: 40px auto 10px auto;
+    }
+    .team-content-container{
+        padding: 0;
+    }
+    .team-content-container{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:982px) {
+    header, main{
+        padding: 50px;
+    }
+    nav, .team-container{
+        flex-direction: column;
+    }
+    nav>ul, main{
+        margin-top: 50px;
+    }
+    .banner-content {
+        margin: 40px auto 10px auto;
+    }
 }
