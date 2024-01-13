@@ -180,12 +180,14 @@ main {
     position: relative;
     bottom: 100px;
 }
-.ten-year-badge h2{
+
+.ten-year-badge h2 {
     font-size: 2rem;
     color: #FFF;
     font-weight: 700;
     margin: 0;
 }
+
 /* some fact style */
 .some-fact-container {
     margin-top: 50px;
@@ -248,7 +250,19 @@ main {
     align-items: center;
 }
 
+/* footer section */
+footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 240px;
+    text-align: center;
+}
 
+footer h6 {
+    border-radius: 8px;
+    background: #FFF4E7;
+    padding: 35px;
+}
 
 /* Responsive design */
 @media screen and (max-width:576px) {
@@ -293,10 +307,14 @@ main {
     .sponsor-img-container {
         gap: 30px;
     }
-    .ten-year-badge{
+
+    .ten-year-badge {
         position: static;
         margin-left: 0;
         width: 50%;
+    }
+    footer{
+        padding: 0;
     }
 }
 
