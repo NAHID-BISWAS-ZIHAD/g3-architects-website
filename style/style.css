@@ -78,87 +78,138 @@ nav h3 {
 .banner img {
     width: 100%;
 }
+
 /* Main section start */
-main{
+main {
     max-width: 1440px;
     margin: 80px auto 80px auto;
     padding: 0 240px;
 }
-.team-container{
+
+.team-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.team-img-container{
+
+.team-img-container {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     gap: 1.5rem;
 }
-.team-img-container img{
+
+.team-img-container img {
     width: 100%;
 }
-.team-content-container{
+
+.team-content-container {
     width: 100%;
-    padding-left: 4rem ;
+    padding-left: 4rem;
 }
-.team-title{
+
+.team-title {
     font-size: 45px;
 }
-.team-content-container .quick-list{
+
+.team-content-container .quick-list {
     color: #727272;
     font-weight: 500;
 }
-.team-content-container .team-feature{
+
+.team-content-container .team-feature {
     color: #FF900E;
     font-weight: 700;
 }
-.team-description{
+
+.team-description {
     color: #727272;
 }
-.some-fact-title{
+
+.some-fact-title {
     color: #131313;
     font-size: 2.8rem;
     font-weight: 700;
 }
-.some-fact-description{
+
+.some-fact-description {
+    max-width: 600px;
+    color: #727272;
+    margin-top: 20px;
+}
+
+.fact-card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.fact-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 50px;
+} 
+
+.fact-card-container .fact-stats{
+    color: #424242;
+    font-weight: 600;
+    font-size: 2.8rem;
+}
+.fact-card-container .fact-title{
     color: #727272;
 }
 
 /* Responsive design */
 @media screen and (max-width:576px) {
-    header, main{
+
+    header,
+    main {
         padding: 20px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
-    .team-container{
+
+    .team-container {
         flex-direction: column-reverse;
     }
-    nav>ul, main{
+
+    nav>ul,
+    main {
         margin-top: 50px;
     }
+
     .banner-content {
         margin: 40px auto 10px auto;
     }
-    .team-content-container{
+
+    .team-content-container {
         padding: 0;
     }
-    .team-content-container{
+
+    .team-content-container {
         margin-bottom: 10px;
     }
 }
 
 @media screen and (min-width:576px) and (max-width:982px) {
-    header, main{
+
+    header,
+    main {
         padding: 50px;
     }
-    nav, .team-container{
+
+    nav,
+    .team-container {
         flex-direction: column;
     }
-    nav>ul, main{
+
+    nav>ul,
+    main {
         margin-top: 50px;
     }
+
     .banner-content {
         margin: 40px auto 10px auto;
     }
